@@ -1,0 +1,166 @@
+/* Importing the Poppins font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;/* Applying Poppins font to the entire document */
+}
+
+/* Header styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.1rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+/* Background effect for header */
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.1);
+  backdrop-filter: blur(50px);
+  z-index: -1;
+}
+
+/* Animated overlay effect for header */
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg rgba(82, 82, 82, 0.4), transparent);
+  transition: 0.5s;
+}
+
+/* Header overlay animation on hover */
+.header:hover::after {
+  left: 100%;
+}
+
+/* Logo styles */
+.logo img {
+  margin-bottom: -12px;
+  width: 75px;
+  margin-left: -50px;
+}
+
+/* Navigation styles */
+.nav a {
+  font-size: 1rem;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 1.75rem;
+}
+
+.nav a:hover {
+  color: rgb(7, 197, 255);
+}
+
+#check {
+  display: none;
+}
+
+.icons {
+  position: absolute;
+  right: 5%;
+  font-size: 2.8rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+/* Footer styles */
+.footer{
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+/* Medium-sized devices */
+@media (max-width: 992px) {
+  .header {
+    padding: 1.3rem 5%;
+  }
+}
+
+/* Small-sized devices */
+@media (max-width: 768px) {
+  .icons {
+    display: inline-flex;
+  }
+
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+
+  .icons #close-icon {
+    display: none;
+  }
+
+  #check:checked ~ .icons #close-icon {
+    display: block;
+  }
+
+  /* Styling for mobile navigation */
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgb(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    overflow: hidden;
+    transition: 0.3s ease;
+  }
+
+  #check:checked ~ .nav {
+    height: 18.7rem;
+  }
+
+  .nav a {
+    display: block;
+    font-size: 1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    transform: translateY(-50px);
+    transition: 0.3s ease;
+  }
+
+  .nav a:hover {
+    color: rgb(7, 197, 255);
+  }
+}
+
+.nav a.active {
+  color: rgb(7, 197, 255);
+}
+
+.nav a.active:hover {
+  color: rgb(20, 93, 210);
+}

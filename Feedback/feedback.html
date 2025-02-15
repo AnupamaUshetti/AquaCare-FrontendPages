@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="feedback_style.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="#">
+      <div class="logo">
+        <img src="images/logo.png" alt="logo"/>
+      </div>
+      </a>
+
+    <input type="checkbox" id="check" />
+    <label for="check" class="icons">
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <i class="bx bx-x" id="close-icon"></i>
+    </label>
+
+    <nav class="nav">
+      <a href="home.html">Home</a>
+      <a href="#" >Gallery</a>
+      <a href="#">Shop</a>
+      <a href="#">Site Map</a>
+      <a href="feedback.html" class="active">Feedback</a>
+      <a href="#">Our Team</a>
+      <a href="#">User Profile</a>
+    </nav>
+  </header>
+  <br><br><br><br>
+
+  <div class="container">
+    <h1>Feedback Form</h1>
+    <h4>*Required</h4>
+
+    <form id="feedback-form" action="https://formspree.io/f/xayrpgwk" method="post">
+      <div class="form-group">
+        <label for="name">*Enter your Name</label>
+        <input type="text" id="name" name="name" required>
+        <span class="error-message" id="name-error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Enter your Email (optional)</label>
+        <input type="email" id="email" name="email">
+        <span class="error-message" id="email-error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Where are you from?(Choose your continent.)</label>
+        <select id="subject">
+          <option value="Asia" name="Asia">Asia</option>
+          <option value="Australia">Australia</option>
+          <option value="Africa">Africa</option>
+          <option value="America">America</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>*Rate us</label>
+        <div class="radio-group">
+          <input type="radio" id="rating-1" name="rating" value="1" required>
+          <label for="rating-1">1</label>
+          <input type="radio" id="rating-2" name="rating" value="2">
+          <label for="rating-2">2</label>
+          <input type="radio" id="rating-3" name="rating" value="3">
+          <label for="rating-3">3</label>
+          <input type="radio" id="rating-4" name="rating" value="4">
+          <label for="rating-4">4</label>
+          <input type="radio" id="rating-5" name="rating" value="5">
+          <label for="rating-5">5</label>
+        </div>
+
+        <span class="error-message" id="rating-error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="comment">*Any questions or special requirements:</label>
+        <textarea id="comment" name="comment" placeholder="Enter your questions or requirements..." required></textarea>
+        <span class="error-message" id="comment-error"></span>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" id="preview-btn">Preview</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+    <div id="preview-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Preview</h2>
+        <div id="preview-container"></div>
+        <button id="edit-btn">Edit</button>
+      </div>
+    </div>
+
+    <div id="confirmation-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Succesfully submitted</h2>
+        <p>Thank you for your feedback!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="page_editor.html" target="_blank">Page Editor</a>
+  </div>
+
+  <script src="feedback.js"></script>
+
+</body>
+</html>

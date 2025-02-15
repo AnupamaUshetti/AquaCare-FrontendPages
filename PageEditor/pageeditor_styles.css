@@ -1,0 +1,63 @@
+body {
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: antiquewhite;
+    background-size:cover;
+    background-position:initial;
+    width:100%;
+
+  }
+
+.topic{
+    text-align: center;
+    color: rgb(17, 2, 86);
+    font-size: larger;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+.student{
+    margin: auto;
+    background-color:rgb(17, 2, 86);
+    background-size:cover;
+    background-position:initial;
+    width:100%;
+    color:antiquewhite ;
+    padding-top:  5px;
+    padding-bottom:  5px;
+    font-size: 1.1rem;
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+  }
+
+.content{
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:antiquewhite;
+    background-size:cover;
+    background-position:initial;
+    width:100%;
+    color:rgb(17, 2, 86) ;
+    padding-top:  30px;
+    padding-bottom:  5px;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 600;
+    display:inline-block;
+}
+.btn {
+    display: inline-block;
+    padding: 9px 15px;
+    background-color: rgb(17, 2, 86);
+    color:antiquewhite;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin:auto;
+    }
+    
+    .btn:hover {
+    background-color: aqua;
+    color: rgb(17, 2, 86);
+    }

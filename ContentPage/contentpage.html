@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safe Seas</title>
+    <link rel="stylesheet" href="content_styles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <div class="logo">
+          <img src="images/logo.png" alt="logo"/>
+        </div>
+        </a>
+  
+      <input type="checkbox" id="check" />
+      <label for="check" class="icons">
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <i class="bx bx-x" id="close-icon"></i>
+      </label>
+  
+      <nav class="nav">
+        <a href="home.html" class="active">Home</a>
+        <a href="#" >Gallery</a>
+        <a href="#">Shop</a>
+        <a href="#">Site Map</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="#">Our Team</a>
+        <a href="#">User Profile</a>
+      </nav>
+    </header>
+    
+
+    <main id="main-topic">
+      <h1>Safe Seas</h1>
+      <p>
+        Preserving coastal and marine areas is crucial for sustaining biodiversity and safeguarding ecosystems vital for human well-being. Through conserve, our mission is to protect these invaluable environments through comprehensive conservation strategies. By promoting sustainable practices, managing pollution, and fostering community engagement, we aim to ensure the longevity of coastal and marine ecosystems. Together, we can mitigate threats such as habitat destruction and overfishing, preserving these areas for future generations to enjoy and benefit from.
+      </p>
+      <button onclick="scrollToSection('section1')">Importance</button>
+      <button onclick="scrollToSection('section2')">Threats</button>
+      <button onclick="scrollToSection('section3')">Benefits</button>
+      <button onclick="scrollToSection('section4')">Future Directions</button>
+    </main>
+
+    <section id="section1" class="blue-background">
+      <div class="content">
+        <img src="images/image1.jpg" alt="Save Seas" />
+        <div class="text-content" style="margin-left: 80px">
+          <h2>Preserving the Marine Life</h2>
+          <p>
+            The importance of saving seas and coastal areas cannot be overstated. These ecosystems support an extraordinary array of biodiversity, from vibrant coral reefs to vital nesting grounds for marine species. Coastal regions also serve as crucial buffers against storms and erosion, protecting human communities and infrastructure. Furthermore, they provide livelihoods for millions through fishing, tourism, and other industries. However, these invaluable habitats face numerous threats, including pollution, overfishing, and habitat destruction. Urgent conservation efforts are imperative to preserve these fragile ecosystems for future generations, safeguarding both environmental integrity and human well-being against the backdrop of climate change and anthropogenic pressures.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="section2" class="light-background">
+      <div class="content reversed">
+        <div class="text-content" style="margin-right: 90px; margin-bottom: 20px">
+          <h2>Current Threats to Seas and Coastal Areas.</h2>
+          <p>
+            Seas and coastal areas confront a myriad of pressing threats, imperiling their delicate ecosystems and the millions who depend on them. Climate change looms large, driving rising sea levels, ocean acidification, and extreme weather events that devastate coastal communities. Pollution from industrial runoff, plastic waste, and oil spills further deteriorates marine habitats, endangering marine life and human health. Overfishing depletes fish stocks, disrupting food webs and undermining the livelihoods of coastal communities. Habitat destruction, exacerbated by urbanization and coastal development, fragments ecosystems and diminishes their resilience. Urgent action is imperative to address these multifaceted challenges and safeguard the future of our seas and coastal areas.
+          </p>
+        </div>
+        <img src="images/image2.webp" alt="Save Seas" style="margin-left: 20px"/>
+      </div>
+    </section>
+
+    <section id="section3" class="blue-background">
+      <div class="content">
+        <img src="images/image7.webp" alt="Save Seas" />
+        <div class="text-content" style="margin-left: 90px">
+          <h2> The Benefits of Saving Seas and Coastal Areas.</h2>
+          <p>
+            The preservation of seas and coastal areas yields an array of invaluable benefits crucial for both humanity and the environment. These habitats serve as biodiversity hotspots, nurturing diverse marine life and supporting ecosystems upon which countless species rely. Coastal regions also provide vital ecosystem services, such as shoreline protection, carbon sequestration, and nutrient cycling, bolstering resilience against climate change impacts. Additionally, they foster economic prosperity through industries like fisheries, tourism, and recreation, sustaining livelihoods and generating revenue for coastal communities. Furthermore, intact marine ecosystems contribute to improved water quality, enhancing human health and well-being. By safeguarding these precious environments, we secure a sustainable future for generations to come.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="section4" class="light-background">
+      <div class="content reversed">
+        <div class="text-content" style="margin-left: -20px; margin-top: -30px">
+          <h2>Achievements and Future Paths in Preserving Seas and Coastal Areas.</h2>
+          <p>
+            Across the globe, there are inspiring success stories in the conservation of seas and coastal areas, demonstrating the potential for positive change. Collaborative efforts have led to the establishment of marine protected areas, restoring damaged ecosystems and safeguarding vulnerable species. Innovative technologies, such as satellite monitoring and artificial intelligence, enhance our understanding of marine environments, aiding in more effective management strategies. Community-driven initiatives empower local stakeholders to participate in conservation efforts, fostering stewardship and resilience. Looking forward, there's a growing recognition of the importance of holistic approaches, integrating conservation with sustainable development goals to ensure the long-term health and prosperity of seas and coastal areas.
+          </p>
+        </div>
+        <img src="images/image4.jpg" alt="Save Seas" style="margin-right: -40px" />
+      </div>  
+    </section>
+
+    <button id="ontop" onclick="scrollToTop()">^</button>
+    
+    <div class="footer">
+      <a href="page_editor.html" target="_blank">Page Editor</a>
+    </div>
+
+    <script src="content.js"></script>
+
+  </body>
+</html>
+            

@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#main-topic {
+  text-align: center;
+  padding: 150px;
+  background-image: url("images/image6.webp");
+  background-size: cover;
+  color: white;
+  filter: brightness(-10px);
+  position: relative;
+}
+
+#ontop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(184, 183, 183);
+  color: black;
+  border-radius: 40px;
+  padding: 10px 14px;
+}
+
+#ontop:hover {
+  background-color: #747474;
+  text-shadow: 0px 0px 0px #1b1b1b;
+  color: black;
+}
+
+#main-topic h1 {
+  margin-bottom: 140px;
+  color: white;
+  font-size: 80px;
+  text-shadow: 3px 5px 2px #1b1b1b;
+}
+
+#main-topic p {
+  margin-top: -120px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-shadow: 5px 5px 5px #1b1b1b;
+}
+
+button {
+  background-color: #d9ad4f;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  margin: 7px;
+  margin-top: 70px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: black;
+  color: #d9ad4f;
+}
+
+section {
+  padding: 100px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content img {
+  flex: 1;
+  max-width: 50%;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 50%;
+  font-size: 22px;
+  letter-spacing: -0.5px;
+}
+
+.text-content p {
+  word-spacing: 4px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.content img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0 30px 50px #222222;
+}
+
+.blue-background {
+  background-color: #d9ad4f;
+  color: black;
+}
+
+.light-background {
+  background-color: #fff;
+  color: black;
+}
+
+h1 {
+  color: black;
+}
+
+#sitemap {
+  width: 89%;
+  height: 500px;
+}
+
+rect:hover {
+  fill: rgb(7, 197, 255); /* Change the fill color to red on hover */
+}
+
+  /* Styles for small screens (mobile devices) */
+  @media (max-width: 767px) {
+    /* CSS rules for small screens */
+  }
+  
+  /* Styles for medium screens (tablets) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* CSS rules for medium screens */
+  }
+  
+  /* Styles for large screens (desktops) */
+  @media (min-width: 992px) {
+    /* CSS rules for large screens */
+  }

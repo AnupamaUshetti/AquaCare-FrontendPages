@@ -1,0 +1,161 @@
+/* Importing the Poppins font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    margin: 0;
+    font-family:"Poppins", sans-serif;/* Applying Poppins font to the entire document */
+    background: url(images/image6.webp);/* Background image */
+    background-size:cover;/* Make sure the background image covers the entire viewport */
+    background-position:initial;/* Initial background position */
+    overflow-x: hidden;/* Hide horizontal overflow */
+  }
+
+  /* Styles for the footer link buttons */
+  .footer a .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: aqua;
+    color: rgb(17, 2, 86);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  /* Container styles */
+  .container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: rgb(17, 2, 86);
+  }
+
+  /* Heading styles */
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: rgb(17, 2, 86);
+  }
+
+  h4{
+    text-align: left;
+    margin-bottom: 2rem;
+    color: red;
+  }
+
+  /* Form group styles */
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Input, textarea, and select styles */
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .radio-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .radio-group input[type="radio"] {
+    margin-right: 0.5rem;
+  }
+ 
+  /* Error message styles */
+  .error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Button styles */
+  button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(17, 2, 86);
+    color: aqua;
+    cursor: pointer;
+  }
+
+  button:hover{
+    background-color: aqua;
+    color: rgb(17, 2, 86);
+  }
+  
+  button:not(:last-child) {
+    margin-right: 1rem;
+  }
+  
+  /* Modal styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 2rem;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  /* Close button styles */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Styles for small screens (mobile devices) */
+@media (max-width: 767px) {
+
+}
+
+/* Styles for medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Styles for large screens (desktops) */
+@media (min-width: 992px) {
+
+}
